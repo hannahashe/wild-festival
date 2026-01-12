@@ -1,3 +1,8 @@
+.title-style {
+  font-family: Barriecito, sans-serif !important;
+  font-size: 1.8rem;
+}
+
 .carousel-item img {
   height: 400px;
   object-fit: cover;
