@@ -1,0 +1,17 @@
+/* Global Styles & Colour Palette */
+
+/* Header, hero image, and hero text styles */
+.hero-image {
+  position: relative;
+  background: url("../images/carousel-img3.jpg") no-repeat center center/cover;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+.hero-text {
+  padding: 20px;
+  border: 2px solid #fff;
+}
