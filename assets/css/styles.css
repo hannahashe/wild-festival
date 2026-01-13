@@ -18,7 +18,7 @@ body {
 }
 
 /* Removeable styling for visualising responsiveness & Bootstrap grid */
-/* .container {
+.container {
   border: 2px dotted rgb(98, 0, 0);
 }
 .col {
@@ -26,7 +26,7 @@ body {
 }
 .row {
   border: 2px dotted rgb(61, 27, 233);
-} */
+}
 
 .navbar {
   background-color: var(--secondary-color) !important;
@@ -77,12 +77,20 @@ h6 {
 } */
 
 .hero-text {
-  height: 300px;
+  height: 200px;
   padding: 20px;
   border: 2px solid var(--secondary-color);
   border-radius: 3% 3%;
+}
+
+.hero-title {
+  justify-content: center;
   align-items: center;
-  display: flex;
+}
+
+.cta-btn {
+  justify-content: center;
+  align-items: end;
 }
 
 .btn-outline {
