@@ -1,11 +1,46 @@
 /* Global Styles & Colour Palette */
+/* pallet */
+
+:root {
+  --main-color: #14794a;
+  --secondary-color: #5263be;
+  --accent-color: #985c04;
+  --text-color: #000000;
+}
+
 body {
   font-family: "Averia Libre", cursive;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #f5f5f5;
-  color: #333333;
+  background-color: var(--main-color);
+  color: #000000;
+}
+
+/* Removeable styling for visualising responsiveness & Bootstrap grid */
+/* .container {
+  border: 2px dotted rgb(98, 0, 0);
+}
+.col {
+  border: 2px dotted rgb(30, 218, 143);
+}
+.row {
+  border: 2px dotted rgb(61, 27, 233);
+} */
+
+.navbar {
+  background-color: var(--secondary-color) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--accent-color);
+  margin: 0;
+  padding: 0;
 }
 
 /* Header, hero image, and hero text styles */
