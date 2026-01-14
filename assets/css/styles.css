@@ -5,7 +5,7 @@
   --main-color: #14794a;
   --secondary-color: #5263be;
   --accent-color: #985c04;
-  --text-color: #000000;
+  --text-color: #ffffff;
 }
 
 body {
@@ -13,8 +13,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: var(--main-color);
-  color: #000000;
+  background-color: #000000;
+  color: var(--text-color);
 }
 
 /* Removeable styling for visualising responsiveness & Bootstrap grid */
