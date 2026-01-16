@@ -1,0 +1,239 @@
+/* Wild Festival LIGHT Theme (Bootstrap 5.3+) */
+/* Include AFTER bootstrap.css */
+
+:root {
+  /* Light surfaces */
+  --wf-paper: #f6fbf9; /* page background */
+  --wf-mist: #eef6f3; /* section alt bg */
+  --wf-card: #ffffff; /* cards */
+  --wf-ink: #10201a; /* main text */
+  --wf-muted: #4f6d62; /* muted text */
+
+  /* Accent palette (same energy) */
+  --wf-magenta: #ff3eb5;
+  --wf-purple: #8b5cff;
+  --wf-cyan: #2df2e9;
+  --wf-acid: #9cff4f;
+  --wf-yellow: #ffd84d;
+
+  --wf-moss: #4caf7a;
+  --wf-fern: #7ed9a5;
+  --wf-orange: #ff8c42;
+  --wf-pink-soft: #ffb7d9;
+
+  /* Gradients */
+  --wf-grad-primary: linear-gradient(
+    90deg,
+    var(--wf-magenta),
+    var(--wf-purple),
+    var(--wf-cyan)
+  );
+  --wf-grad-sunset: linear-gradient(
+    90deg,
+    var(--wf-yellow),
+    var(--wf-orange),
+    var(--wf-magenta)
+  );
+
+  /* Borders / shadows / radius */
+  --wf-border: rgba(16, 32, 26, 0.12);
+  --wf-radius: 1.25rem;
+  --wf-shadow: 0 12px 30px rgba(16, 32, 26, 0.1);
+}
+
+/* --- Bootstrap variable overrides --- */
+:root {
+  --bs-body-bg: var(--wf-paper);
+  --bs-body-color: var(--wf-ink);
+
+  --bs-secondary-color: var(--wf-muted);
+  --bs-border-color: var(--wf-border);
+
+  /* Map Bootstrap semantic colours to your brand */
+  --bs-primary: var(--wf-purple);
+  --bs-success: var(--wf-moss);
+  --bs-info: var(--wf-cyan);
+  --bs-warning: var(--wf-yellow);
+  --bs-danger: var(--wf-magenta);
+
+  --bs-link-color: var(--wf-purple);
+  --bs-link-hover-color: var(--wf-magenta);
+
+  --bs-border-radius: var(--wf-radius);
+}
+
+/* --- Page background vibe (subtle) --- */
+body {
+  background: radial-gradient(
+      900px 500px at 10% 10%,
+      rgba(45, 242, 233, 0.18),
+      transparent 60%
+    ),
+    radial-gradient(
+      900px 500px at 90% 20%,
+      rgba(255, 62, 181, 0.14),
+      transparent 55%
+    ),
+    radial-gradient(
+      900px 500px at 50% 90%,
+      rgba(156, 255, 79, 0.12),
+      transparent 55%
+    ),
+    var(--wf-paper);
+}
+
+/* --- Links --- */
+a {
+  text-decoration-color: rgba(139, 92, 255, 0.35);
+}
+a:hover,
+a:focus {
+  text-decoration-color: rgba(255, 62, 181, 0.45);
+}
+
+/* --- Navbar --- */
+.navbar {
+  background: rgba(255, 255, 255, 0.75) !important;
+  border-bottom: 1px solid var(--wf-border);
+  backdrop-filter: blur(10px);
+}
+.navbar .navbar-brand {
+  letter-spacing: 0.2px;
+}
+.navbar .nav-link {
+  color: rgba(16, 32, 26, 0.85) !important;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: var(--wf-purple) !important;
+}
+
+/* --- Sections --- */
+.wf-section {
+  padding: 4rem 0;
+}
+.wf-section-alt {
+  background: linear-gradient(
+    180deg,
+    rgba(238, 246, 243, 0.85),
+    rgba(238, 246, 243, 0.35)
+  );
+  border-top: 1px solid rgba(16, 32, 26, 0.06);
+  border-bottom: 1px solid rgba(16, 32, 26, 0.06);
+}
+
+/* --- Cards --- */
+.card {
+  background: var(--wf-card);
+  border: 1px solid rgba(16, 32, 26, 0.1);
+  box-shadow: var(--wf-shadow);
+}
+.card-header,
+.card-footer {
+  background: rgba(238, 246, 243, 0.6);
+  border-color: rgba(16, 32, 26, 0.08);
+}
+
+/* --- Buttons --- */
+.btn {
+  border-radius: var(--wf-radius);
+  font-weight: 750;
+  letter-spacing: 0.2px;
+}
+
+.btn-primary {
+  border: 0;
+  color: #0b0f0d;
+  background: var(--wf-grad-primary);
+  box-shadow: 0 10px 24px rgba(139, 92, 255, 0.2);
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  filter: brightness(1.03);
+  box-shadow: 0 12px 28px rgba(255, 62, 181, 0.18),
+    0 0 0 0.25rem rgba(45, 242, 233, 0.16);
+}
+
+.btn-outline-primary {
+  border-color: rgba(139, 92, 255, 0.45);
+  color: var(--wf-purple);
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background: rgba(139, 92, 255, 0.08);
+  border-color: rgba(139, 92, 255, 0.65);
+  color: var(--wf-ink);
+  box-shadow: 0 0 0 0.25rem rgba(139, 92, 255, 0.12);
+}
+
+/* Optional: a “sunset” CTA */
+.btn-wf-sunset {
+  border: 0;
+  color: #0b0f0d;
+  background: var(--wf-grad-sunset);
+  border-radius: var(--wf-radius);
+  font-weight: 800;
+  box-shadow: 0 10px 24px rgba(255, 140, 66, 0.18);
+}
+.btn-wf-sunset:hover,
+.btn-wf-sunset:focus {
+  filter: brightness(1.03);
+  box-shadow: 0 12px 28px rgba(255, 62, 181, 0.16),
+    0 0 0 0.25rem rgba(255, 140, 66, 0.14);
+}
+
+/* --- Forms --- */
+.form-control,
+.form-select {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(16, 32, 26, 0.14);
+  color: var(--wf-ink);
+}
+.form-control::placeholder {
+  color: rgba(79, 109, 98, 0.75);
+}
+.form-control:focus,
+.form-select:focus {
+  border-color: rgba(45, 242, 233, 0.75);
+  box-shadow: 0 0 0 0.25rem rgba(45, 242, 233, 0.18);
+}
+
+/* --- Badges --- */
+.badge.bg-primary {
+  background: rgba(139, 92, 255, 0.12) !important;
+  border: 1px solid rgba(139, 92, 255, 0.28);
+  color: rgba(16, 32, 26, 0.92) !important;
+}
+.badge.bg-success {
+  background: rgba(76, 175, 122, 0.14) !important;
+  border: 1px solid rgba(76, 175, 122, 0.28);
+  color: rgba(16, 32, 26, 0.92) !important;
+}
+
+/* --- Theme utilities --- */
+.wf-gradient-text {
+  background: var(--wf-grad-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.wf-gradient-bar {
+  height: 5px;
+  border-radius: 999px;
+  background: var(--wf-grad-primary);
+}
+
+.wf-surface {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(16, 32, 26, 0.1);
+  box-shadow: var(--wf-shadow);
+  border-radius: var(--wf-radius);
+}
+
+.wf-glow:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 0 0.25rem rgba(45, 242, 233, 0.16),
+    0 18px 40px rgba(16, 32, 26, 0.12);
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
