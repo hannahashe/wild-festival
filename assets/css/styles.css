@@ -1,5 +1,25 @@
-Global Styles & Colour Palette
 /* pallet */
+:root {
+  --background-color: #0e1f1a;
+  --background2: #12332b;
+  --cards-panels: #1f2a2e;
+  --primary-cta-gradient: linear-gradient(90deg, #ff3eb5, #8b5cff, #2df2e9);
+  --hover-glow-1: #9cff4f;
+  --hover-glow-2: #ffd84d;
+  --icon-badge-1: #4caf7a;
+  --icon-badge-2: #ff8c42;
+  --icon-badge-3: #ff3eb5;
+  --link-color: #2df2e9;
+}
+
+.hero-img {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  display: block;
+}
 
 /* :root {
   --main-color: #14794a;
