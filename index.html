@@ -29,9 +29,102 @@
   </head>
   <body>
     <!-- Navbar & Header -->
-    <header>
-      <!-- Navigation -->
+    <section class="navigation">
+      <!-- Bootstrap Navbar with light theme -->
       <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        data-bs-theme="light"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="assets/images/small-logo.jpg"
+              alt="Small brand logo for Wild Festival"
+              class="brand-logo"
+              width="70px"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link" id="about">Another link</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- Header, hero section -->
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div id="hero">
+              <img
+                src="assets/images/brand-img2.jpg"
+                alt="Large branding logo for Wild Festival"
+                class="hero-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row text-center text-lg-start py-5">
+          <div class="col-12 mb-4">
+            <p
+              class="mb-2 text-uppercase small fw-bold"
+              style="letter-spacing: 0.12em"
+            >
+              Northern England • Aug 13 - 17, 2026
+            </p>
+            <h1 class="display-3 fw-bold mb-3">WILD FESTIVAL</h1>
+            <p class="mb-4">
+              A queer, nature-focused eco-festival — campfires, workshops,
+              music, and woodland joy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- <header class="wf-section">
+      <div class="container">
+        <div class="row text-center text-lg-start py-5">
+          <div class="col-12 mb-4">
+
+              <p
+                class="mb-2 text-uppercase small fw-bold"
+                style="letter-spacing: 0.12em"
+              >
+                Northern England • Aug 13 - 17, 2026
+              </p>
+              <h1 class="display-3 fw-bold mb-3">WILD FESTIVAL</h1>
+              <p class="mb-4">
+                A queer, nature-focused eco-festival — campfires, workshops,
+                music, and woodland joy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header> -->
+
+    <!-- Navigation -->
+    <!-- <nav
         class="navbar navbar-expand-lg bg-body-tertiary"
         data-bs-theme="light"
       >
@@ -58,7 +151,7 @@
         </div>
       </nav>
     </header>
-    <!-- Main Content & CTA -->
+    <!-- Main Content & CTA 
     <main>
       <div class="hero">
         <img
@@ -67,7 +160,7 @@
           class="hero-img"
         />
       </div>
-    </main>
+    </main> -->
 
     <!-- Bootstrap JS -->
     <script
