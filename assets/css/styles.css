@@ -1,7 +1,7 @@
 /* pallet */
 :root {
   --background-color: #0e1f1a;
-  --background2: #12332b;
+  --background2: #1c7b5c;
   --cards-panels: #1f2a2e;
   --primary-cta-gradient: linear-gradient(90deg, #ff3eb5, #8b5cff, #2df2e9);
   --hover-glow-1: #9cff4f;
@@ -12,10 +12,27 @@
   --link-color: #2df2e9;
 }
 
+body {
+  background-color: var(--background2);
+  color: #ffffff;
+}
+
+/* Navbar, header & hero section */
+
+.navbar {
+  background-color: var(--background2) !important;
+}
+
 .navbar a {
   color: var(--link-color) !important;
-  text-transform: uppercase;
-  font-weight: 600;
+  border-radius: 5px 2px 5px 2px;
+  transition: box-shadow 0.5s ease;
+  text-transform: lowercase;
+}
+
+.navbar a:hover {
+  color: var(--link-color) !important;
+  box-shadow: 0 0 8px var(--hover-glow-1);
 }
 
 .hero-img {
@@ -25,4 +42,21 @@
   display: flex;
   justify-content: center;
   margin: 0 auto;
+}
+
+.hero-img img {
+  display: block;
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.2) !important;
+}
+
+.date-location-header {
+  font-size: 1.4rem;
+}
+
+/* Media queries */
+/* Query to resize date & location heading on tablets and larger screens */
+@media (min-width: 768px) {
+  .date-location-header {
+    font-size: 1.8rem;
+  }
 }
