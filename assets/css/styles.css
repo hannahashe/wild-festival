@@ -41,7 +41,13 @@ body {
   background-clip: text !important;
 }
 
-#hero {
+.navbar .navbar-brand img:hover {
+  transition: box-shadow 0.5s ease;
+  filter: drop-shadow(0px 5px 10px var(--hover-glow-1))
+    drop-shadow(0px -5px 10px var(--hover-glow-1));
+}
+
+navbar #hero {
   display: flex;
   flex-direction: column;
   align-items: center;
